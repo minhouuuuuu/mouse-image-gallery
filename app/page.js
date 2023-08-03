@@ -69,7 +69,7 @@ export default function Index() {
         [...Array(19).keys()].map( (_, index) => {
           const ref = useRef(null);
           refs.push(ref)
-          return <img onClick={() => {console.log(refs)}} ref={ref} src={`/images/${index}.jpg`}></img>
+          return <img onClick={() => {console.log(refs)}} ref={ref} src={`/images/${index}.jpg`} alt='image'></img>
         })
       }
     </div>
